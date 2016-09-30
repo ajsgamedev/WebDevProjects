@@ -108,7 +108,7 @@ __        ___     _            _
 
 
 
-container{
+#container{
   width: 960px;
   background-color: #c0392b;
   margin-left: auto;
@@ -116,21 +116,46 @@ container{
 
 }
 
-fullwidth{
+.fullwidth{
+text-align: center;
 margin: 10px;
 float: left;
 width: 930px;
 padding: 5px;
 background-color: #27ae60;
-
 }
 
-halfwidth{
+.halfwidth{
+  text-align: center;
 display: inline-block;
 float: left;
 margin: 10px;
 padding: 5px;
 width: 450px;
 background-color: #27ae60;
+}
 
+.thirdwidth{
+  text-align: center;
+display: inline-block;
+float: left;
+margin: 10px;
+padding: 5px;
+width: 290px;
+background-color: #27ae60;
+}
+
+.quaterwidth{
+  text-align: center;
+display: inline-block;
+float: left;
+margin: 10px;
+padding: 5px;
+width: 210px;
+background-color: #27ae60;
+
+}
+
+body{
+  background-color: #c0392b;
 }
