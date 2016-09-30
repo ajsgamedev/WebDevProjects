@@ -1,0 +1,21 @@
+h1{
+  color: #ffffff;
+}
+
+  body{
+    color: #16a085;
+    background-color: #000000;
+
+  }
+
+  p{
+    color: #16a085;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    border-style:  double groove;
+    border-color: #800000;
+    border-width: 20px;
+  }
