@@ -159,3 +159,8 @@ background-color: #27ae60;
 body{
   background-color: #c0392b;
 }
+
+
+@@media (max-width: 481px) {
+
+}
