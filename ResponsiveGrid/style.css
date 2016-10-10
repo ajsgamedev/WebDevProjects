@@ -229,9 +229,9 @@ h1, h2 {
 
 }
 
-@media (max-width: 481px){
+@media (max-width: 800px){
 		#container {
-			width: 440px;
+			width: 760px;
 		}
 
 
@@ -246,28 +246,24 @@ h1, h2 {
 		}
 
 
-		.bl1, .br1,
-		.bl2, .br2,
-		.bl3, .br3,
-		.bl4, .br4,
-		.bl5, .br5,
-		.bl6, .br6,
-		.bl7, .br7,
-		.bl8, .br8,
-		.bl9, .br9,
-		.bl10, .br10,
-		.bl11, .br11{
-			padding-left: 10px;
-			padding-right: 10px;
+		.blank-left-1, .blank-right-1,
+		.blank-left-2, .blank-right-2,
+		.blank-left-3, .blank-right-3,
+		.blank-left-4, .blank-right-4,
+		.blank-left-5, .blank-right-5,
+		.blank-left-6, .blank-right-6,
+		.blank-left-7, .blank-right-7,
+		.blank-left-8, .blank-right-8,
+		.blank-left-9, .blank-right-9,
+		.blank-left-10, .blank-right-10,
+		.blank-left-11, .blank-right-11{
+			padding-left: 5px;
+			padding-right: 5px;
 		}
 
-		.col-6,
-		.col-7,
-		.col-8,
-		.col-9,
-		.col-10,
-		.col-11,
-		.col-12{
+		.col-1, .col-2,
+		.col-3, .col-4,
+		.col-5, .col-6{
 			width: 400px;
 		}
 
