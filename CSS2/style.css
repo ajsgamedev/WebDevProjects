@@ -110,7 +110,7 @@ __        ___     _            _
 
 #container{
   width: 960px;
-  background-color: #c0392b;
+  background-color: #2c3e50;
   margin-left: auto;
   margin-right: auto;
 
@@ -122,7 +122,7 @@ margin: 10px;
 float: left;
 border: 4px;
 padding: 5px;
-width: 922px;
+width: 930px;
 
 background-color: #27ae60;
 }
@@ -134,7 +134,7 @@ float: left;
 border: 4px;
 margin: 10px;
 padding: 5px;
-width: 442px;
+width: 450px;
 
 background-color: #27ae60;
 }
@@ -147,7 +147,7 @@ border-style: solid;
 border: 4px;
 margin: 10px;
 padding: 5px;
-width: 282px;
+width: 290px;
 
 background-color: #27ae60;
 }
@@ -160,7 +160,7 @@ border-style: solid;
 border: 4px;
 margin: 10px;
 padding: 5px;
-width: 202px;
+width: 210px;
 background-color: #27ae60;
 
 }
@@ -173,7 +173,24 @@ body{
 @media (max-width: 800px) {
     #container {
       width: 760px;
+      background-color: #2c3e50;
+      margin-left: auto;
+      margin-right: auto;
   }
 
-  
+  .fullwidth{
+    width: 730px;
+  }
+
+  .halfwidth{
+    width: 350px;
+  }
+
+  .thirdwidth{
+    width:223px;
+  }
+
+  .quaterwidth{
+    width: 160px;
+  }
 }
