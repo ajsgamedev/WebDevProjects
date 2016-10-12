@@ -1,0 +1,212 @@
+/*-------------------------------------
+Table of contents
+1. Reset
+2. Typography
+3. Basic layout
+4. Widgets
+5. Media items
+6. Forms
+7. Media queries
+8. IE specific styles
+---------------------------------------*/
+
+
+
+/*
+ ____                _
+|  _ \ ___  ___  ___| |_
+| |_) / _ \/ __|/ _ \ __|
+|  _ <  __/\__ \  __/ |_
+|_| \_\___||___/\___|\__|
+
+*/
+
+
+/*
+ _____                                        _
+|_   _|   _ _ __   ___   __ _ _ __ __ _ _ __ | |__  _   _
+  | || | | | '_ \ / _ \ / _` | '__/ _` | '_ \| '_ \| | | |
+  | || |_| | |_) | (_) | (_| | | | (_| | |_) | | | | |_| |
+  |_| \__, | .__/ \___/ \__, |_|  \__,_| .__/|_| |_|\__, |
+      |___/|_|          |___/          |_|          |___/
+*/
+
+#bungee {
+  font-family: 'Bungee Inline';
+}
+
+#pacifico{
+  font-family: 'Pacifico', cursive;
+}
+
+#orbitron{
+  font-family: 'Orbitron', sans-serif;
+}
+
+#bangers{
+  font-family: 'Bangers', cursive;
+}
+
+#fredoka{
+  font-family: 'Fredoka One', cursive;
+}
+/*
+ ____            _        _                            _
+| __ )  __ _ ___(_) ___  | |    __ _ _   _  ___  _   _| |_
+|  _ \ / _` / __| |/ __| | |   / _` | | | |/ _ \| | | | __|
+| |_) | (_| \__ \ | (__  | |__| (_| | |_| | (_) | |_| | |_
+|____/ \__,_|___/_|\___| |_____\__,_|\__, |\___/ \__,_|\__|
+                                     |___/
+*/
+
+
+
+
+/*
+__        ___     _            _
+\ \      / (_) __| | __ _  ___| |_ ___
+ \ \ /\ / /| |/ _` |/ _` |/ _ \ __/ __|
+  \ V  V / | | (_| | (_| |  __/ |_\__ \
+   \_/\_/  |_|\__,_|\__, |\___|\__|___/
+                    |___/
+*/
+
+
+
+
+
+/*
+ __  __          _ _         ___ _
+|  \/  | ___  __| (_) __ _  |_ _| |_ ___ _ __ ___  ___
+| |\/| |/ _ \/ _` | |/ _` |  | || __/ _ \ '_ ` _ \/ __|
+| |  | |  __/ (_| | | (_| |  | || ||  __/ | | | | \__ \
+|_|  |_|\___|\__,_|_|\__,_| |___|\__\___|_| |_| |_|___/
+
+*/
+
+
+
+
+/*
+ _____
+|  ___|__  _ __ _ __ ___  ___
+| |_ / _ \| '__| '_ ` _ \/ __|
+|  _| (_) | |  | | | | | \__ \
+|_|  \___/|_|  |_| |_| |_|___/
+
+*/
+
+
+
+
+/*
+ __  __          _ _          ___                  _
+|  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___
+| |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
+| |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
+|_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|  |_|\___||___/
+
+*/
+
+
+
+
+
+
+/*
+ ___ _____   ____                  _  __ _        ____  _         _
+|_ _| ____| / ___| _ __   ___  ___(_)/ _(_) ___  / ___|| |_ _   _| | ___  ___
+ | ||  _|   \___ \| '_ \ / _ \/ __| | |_| |/ __| \___ \| __| | | | |/ _ \/ __|
+ | || |___   ___) | |_) |  __/ (__| |  _| | (__   ___) | |_| |_| | |  __/\__ \
+|___|_____| |____/| .__/ \___|\___|_|_| |_|\___| |____/ \__|\__, |_|\___||___/
+                  |_|                                       |___/
+*/
+
+
+body{
+  background-color: grey;
+}
+
+
+#container{
+  width: 960px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.fullwidth{
+
+text-align: center;
+margin: 10px;
+float: left;
+border: 4px;
+padding: 5px;
+width: 930px;
+background-color: #27ae60;
+}
+
+.halfwidth{
+text-align: center;
+display: inline-block;
+float: left;
+border: 4px;
+margin: 10px;
+padding: 5px;
+width: 450px;
+background-color: #27ae60;
+}
+
+.thirdwidth{
+text-align: center;
+display: inline-block;
+float: left;
+border: 4px;
+margin: 10px;
+padding: 5px;
+width: 290px;
+background-color: #27ae60;
+}
+
+.quaterwidth{
+text-align: center;
+display: inline-block;
+float: left;
+border: 4px;
+margin: 10px;
+padding: 5px;
+width: 210px;
+background-color: #27ae60;
+}
+
+
+
+.clearfix {
+	clear: both;
+}
+
+
+
+@media (max-width: 800px) {
+    #container {
+      width: 760px;
+      background-color: #2c3e50;
+  }
+
+  .fullwidth{
+    width: 730px;
+  }
+
+  .halfwidth{
+    width: 350px;
+  }
+
+  .thirdwidth{
+    width:223px;
+  }
+
+  .quaterwidth{
+    width: 160px;
+  }
+}
