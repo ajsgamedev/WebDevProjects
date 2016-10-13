@@ -106,7 +106,9 @@ __        ___     _            _
                   |_|                                       |___/
 */
 
-
+body{
+  background-color: #c0392b;
+}
 
 #container{
   width: 960px;
@@ -165,8 +167,10 @@ background-color: #27ae60;
 
 }
 
-body{
-  background-color: #c0392b;
+
+
+.clearfix {
+	clear: both;
 }
 
 
