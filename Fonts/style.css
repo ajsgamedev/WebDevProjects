@@ -30,6 +30,29 @@ Table of contents
   |_| \__, | .__/ \___/ \__, |_|  \__,_| .__/|_| |_|\__, |
       |___/|_|          |___/          |_|          |___/
 */
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
+
+@font-face {
+  font-family: starsnstrip
+  src:url(starsandstripes.ttf);
+}
+
+
+@font-face {
+  font-family: creampuf;
+  src: url(CREAMPUF.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: yorkwhite;
+  src:
+  url(yorkwhiteletter.otf) format ('opentype'),
+  url(yorkwhiteletter.ttf) format ('truetype');
+  }
+
+#ruslanDis{
+  font-family: 'Ruslan Display', cursive;
+}
 
 #bungee {
   font-family: 'Bungee Inline';
@@ -49,6 +72,17 @@ Table of contents
 
 #fredoka{
   font-family: 'Fredoka One', cursive;
+}
+
+#starsnstrip{
+  font-family: starsnstrip;
+}
+#yorkwhite{
+  font-family: yorkwhite,fantasy;
+}
+
+#creampuff{
+  font-family: creampuf,cursive;
 }
 /*
  ____            _        _                            _
@@ -167,6 +201,7 @@ margin: 10px;
 padding: 5px;
 width: 290px;
 background-color: #27ae60;
+font-family: yorkwhite;
 }
 
 .quaterwidth{
@@ -178,6 +213,7 @@ margin: 10px;
 padding: 5px;
 width: 210px;
 background-color: #27ae60;
+font-family: creampuff;
 }
 
 
