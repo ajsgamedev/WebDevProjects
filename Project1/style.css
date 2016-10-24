@@ -1,0 +1,365 @@
+/*
+ ____                _
+|  _ \ ___  ___  ___| |_
+| |_) / _ \/ __|/ _ \ __|
+|  _ <  __/\__ \  __/ |_
+|_| \_\___||___/\___|\__|
+
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+/*
+ _____                                        _
+|_   _|   _ _ __   ___   __ _ _ __ __ _ _ __ | |__  _   _
+  | || | | | '_ \ / _ \ / _` | '__/ _` | '_ \| '_ \| | | |
+  | || |_| | |_) | (_) | (_| | | | (_| | |_) | | | | |_| |
+  |_| \__, | .__/ \___/ \__, |_|  \__,_| .__/|_| |_|\__, |
+      |___/|_|          |___/          |_|          |___/
+*/
+
+body {
+	background-color: #34495e;
+	color: #000000;
+	font-family: "Comic Sans MS", cursive, san-serif;
+	cursor: default;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+article ul {
+	margin-left: 20px;
+}
+
+
+
+article a {
+	color: #ffffff;
+}
+
+article a:hover {
+	font-weight: bold;
+}
+
+.code {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+
+
+/*
+ _   _               __  __
+| \ | | __ ___   __ |  \/  | ___ _ __  _   _
+|  \| |/ _` \ \ / / | |\/| |/ _ \ '_ \| | | |
+| |\  | (_| |\ V /  | |  | |  __/ | | | |_| |
+|_| \_|\__,_| \_/   |_|  |_|\___|_| |_|\__,_|
+
+*/
+
+nav{
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+nav ul {
+	font-size: 12pt;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+nav ul li {
+	display: block;
+	width: 120px;
+	background-color: #FFFFFF;
+	margin-left: 2px;
+	margin-right: 2px;
+	text-align: center;
+	float: left;
+}
+
+nav  ul li  .rmenu {
+	display: none;
+}
+
+nav ul a {
+	display:block;
+	width: 120px;
+	text-decoration: none;
+	height: 25px;
+	line-height: 25px;
+	background-color: #34495e;
+	color: #2ecc71;
+}
+
+nav  ul li.rmenu {
+	display: none;
+}
+
+nav ul li:hover a:hover {
+	color: #FFFF00;
+	background-color: #2c3e50;
+}
+
+
+
+/*
+ ____            _        _                            _
+| __ )  __ _ ___(_) ___  | |    __ _ _   _  ___  _   _| |_
+|  _ \ / _` / __| |/ __| | |   / _` | | | |/ _ \| | | | __|
+| |_) | (_| \__ \ | (__  | |__| (_| | |_| | (_) | |_| | |_
+|____/ \__,_|___/_|\___| |_____\__,_|\__, |\___/ \__,_|\__|
+                                     |___/
+*/
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #3498db;
+}
+
+
+#container {
+	width: 960px;
+	background-color: #d35400;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.col-1 {
+	width: 40px;
+}
+.col-2 {
+	width: 120px;
+}
+.col-3 {
+	width: 200px;
+}
+.col-4 {
+	width: 280px;
+}
+.col-5 {
+	width: 360px;
+}
+.col-6 {
+	width: 440px;
+}
+.col-7 {
+	width: 520px;
+}
+.col-8 {
+	width: 600px;
+}
+.col-9 {
+	width: 680px;
+}
+.col-10 {
+	width: 760px;
+}
+.col-11{
+	width: 840px;
+}
+.col-12 {
+	width: 920px;
+}
+
+
+
+.clearfix {
+	clear: both;
+}
+
+
+
+.trim-left{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.trim-right{
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.blank-left-1{
+	padding-left: 90px;
+}
+.blank-left-2{
+	padding-left: 170px;
+}
+.blank-left-3{
+	padding-left: 250px;
+}
+.blank-left-4{
+	padding-left: 330px;
+}
+.blank-left-5{
+	padding-left: 410px;
+}
+.blank-left-6{
+	padding-left: 490px;
+}
+.blank-left-7{
+	padding-left: 570px;
+}
+.blank-left-8{
+	padding-left: 650px;
+}
+.blank-left-9{
+	padding-left: 730px;
+}
+.blank-left-10{
+	padding-left: 810px;
+}
+.blank-left-11{
+	padding-left: 890px;
+}
+
+
+
+.blank-right-1{
+	padding-right: 90px;
+}
+.blank-right-2{
+	padding-right: 170px;
+}
+.blank-right-3{
+	padding-right: 250px;
+}
+.blank-right-4{
+	padding-right: 330px;
+}
+.blank-right-5{
+	padding-right: 410px;
+}
+.blank-right-6{
+	padding-right: 490px;
+}
+.blank-right-7{
+	padding-right: 570px;
+}
+.blank-right-8{
+	padding-right: 650px;
+}
+.blank-right-9{
+	padding-right: 730px;
+}
+.blank-right-10{
+	padding-right: 810px;
+}
+.blank-right-11{
+	padding-right: 890px;
+}
+
+
+.stack{
+	display: block;
+	clear: both;
+}
+
+
+
+
+
+/*
+ __  __          _ _          ___                  _
+|  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___
+| |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
+| |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
+|_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|  |_|\___||___/
+
+*/
+
+
+@media (max-width: 481px){
+		#container {
+			width: 440px;
+		}
+
+		.col-1, .col-2,
+		.col-3, .col-4,
+		.col-5, .col-6,
+		.col-7, .col-8,
+		.col-9, .col-10,
+		.col-11,.col-12{
+			display: block;
+			float: left;
+		}
+
+		.blank-left-1, .blank-right-1,
+		.blank-left-2, .blank-right-2,
+		.blank-left-3, .blank-right-3,
+		.blank-left-4, .blank-right-4,
+		.blank-left-5, .blank-right-5,
+		.blank-left-6, .blank-right-6,
+		.blank-left-7, .blank-right-7,
+		.blank-left-8, .blank-right-8,
+		.blank-left-9, .blank-right-9,
+		.blank-left-10, .blank-right-10,
+		.blank-left-11, .blank-right-11{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.col-6,
+		.col-7,
+		.col-8,
+		.col-9,
+		.col-10,
+		.col-11,
+		.col-12{
+			width: 400px;
+		}
+
+		nav{
+			float: left;
+		}
+
+		nav ul li{
+			margin-left: 0px;
+			margin-right: 0px;
+			width: 420px;
+			display: none;
+ 		}
+
+		nav  ul li.rmenu {
+			display: block;
+		}
+		nav ul li a{
+			width: 420px;
+			height: 26px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+ 		}
+
+		nav ul:hover li {
+			display: block;
+		}
+}
