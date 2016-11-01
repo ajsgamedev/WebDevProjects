@@ -24,7 +24,7 @@
 */
 
 body {
-	background-color: #95a5a6;
+	background-color: #ecf0f1;
 	color: #000000;
 	font-family: 'Verdana', cursive, san-serif;
 	cursor: default;
@@ -96,8 +96,8 @@ nav ul a {
 	text-decoration: none;
 	height: 25px;
 	line-height: 25px;
-	background-color: #34495e;
-	color: #2ecc71;
+	background-color: #27ae60;
+	color: #000000;
 }
 
 nav  ul li.rmenu {
@@ -109,8 +109,6 @@ nav ul li:hover a:hover {
 	background-color: #2c3e50;
 }
 
-
-
 /*
  ____            _        _                            _
 | __ )  __ _ ___(_) ___  | |    __ _ _   _  ___  _   _| |_
@@ -119,6 +117,7 @@ nav ul li:hover a:hover {
 |____/ \__,_|___/_|\___| |_____\__,_|\__, |\___/ \__,_|\__|
                                      |___/
 */
+
 
 .col-1,
 .col-2,
@@ -144,7 +143,6 @@ nav ul li:hover a:hover {
 	padding-bottom: 10px;
 	background-color: #e74c3c;
 }
-
 
 #container {
 	width: 960px;
@@ -191,11 +189,9 @@ nav ul li:hover a:hover {
 }
 
 
-
 .clearfix {
 	clear: both;
 }
-
 
 
 .trim-left{
@@ -284,19 +280,16 @@ nav ul li:hover a:hover {
 	clear: both;
 }
 
-
-.img {
-    border: 1px solid #ccc;
+img {
+		max-width: 100%;
+		height: auto;
 }
 
 .img:hover {
-    border: 1px solid #777;
+		-webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
 }
 
-.img img {
-    width: 100%;
-    height: auto;
-}
 
 .desc {
     padding: 15px;
@@ -313,7 +306,15 @@ nav ul li:hover a:hover {
     width: 24.99999%;
 }
 
-
+.footer {
+  position:sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
 
 
 /*
@@ -342,6 +343,7 @@ nav ul li:hover a:hover {
 			width: 440px;
 		}
 
+
 		.col-1, .col-2,
 		.col-3, .col-4,
 		.col-5, .col-6,
@@ -349,7 +351,7 @@ nav ul li:hover a:hover {
 		.col-9, .col-10,
 		.col-11,.col-12{
 			display: block;
-			float: left;
+			float:left;
 		}
 
 		.blank-left-1, .blank-right-1,
@@ -384,7 +386,7 @@ nav ul li:hover a:hover {
 		nav ul li{
 			margin-left: 0px;
 			margin-right: 0px;
-			width: 420px;
+			width: 400px;
 			display: none;
  		}
 
@@ -392,8 +394,8 @@ nav ul li:hover a:hover {
 			display: block;
 		}
 		nav ul li a{
-			width: 420px;
-			height: 26px;
+			width: 400px;
+			height: 40px;
 			padding-top: 8px;
 			padding-bottom: 8px;
  		}
