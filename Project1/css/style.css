@@ -31,7 +31,7 @@
 @font-face {
 	font-family: "Castellar" ;
 	src: url("fonts/castellar.ttf") format('truetype'),
-	url("fonts/castellar.eot") format ('embedded-opentype');
+	url("fonts/castellar.eot");
 }
 
 @font-face {
@@ -56,8 +56,9 @@ h1, h2, h4 {
 	font-weight:bold;
 }
 
-h1{
-
+h3, h5{
+	font-family: "WideLatin", cursive;
+	font-weight:bold;
 }
 
 article ul {
@@ -104,7 +105,8 @@ nav ul {
 nav ul li {
 	display: block;
 	width: 180px;
-	background-color: #FFFFFF;
+	background-color: #27ae60;
+	color: #000000;
 	margin-left: 2px;
 	margin-right: 2px;
 	text-align: center;
