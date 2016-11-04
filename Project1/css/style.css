@@ -28,11 +28,6 @@
     src: url("fonts/wide_latin.ttf") format('truetype');
 }
 
-@font-face {
-	font-family: "Castellar" ;
-	src: url("fonts/castellar.ttf") format('truetype'),
-	url("fonts/castellar.eot");
-}
 
 @font-face {
 font-family: 'Amaranth', sans-serif;
