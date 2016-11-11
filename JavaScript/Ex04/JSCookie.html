@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>JavaScript Cookies</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+
+	</head>
+	
+	<body>
+
+		<div id='container'>
+			<div class='grd12'><h1>Cookies</h1></div>
+			<div class='clear'></div>			
+
+		
+			<nav>
+				<ul>
+					<li class='rmenu'><a href="#">Menu</a></li>
+					<li><a href="JSCookie.html">Home</a></li>
+					<li><a href="#">Nothing Here</a></li>
+					<li><a href="#">Nothing Here</a></li>
+				</ul>
+			</nav>
+			<div class='clear'></div>
+
+			<div class='grd12'>
+				<form id='cookieForm'>
+  					<label for='name' >Name:</label>
+  						<input type='text' name='name' id='name' placeholder='Firstname Surname'><br>
+  					<label for='email'>Email Address:</label> 
+  						<input type='email' name='userEmail' id='userEmail'placeholder='name@email.com'><br>
+    					<button type='button' form='cookieForm' id='subButton'>Submit Information</button>		
+				</form>
+			</div>
+			<div class='clear'></div>
+
+			<div class='grd6' id='Form Submission'>
+				<h2>Form Output</h2>
+				<table>
+					<tr>
+						<td>Name Field Contains</td><td id='outName'></td>
+					</tr>
+					<tr>
+						<td>Email Field Contains</td><td id='outEmail'></td>
+					</tr>
+				</table>
+			</div>
+
+
+			<div class='grd6' id='cookieRead'>
+				<h2>Cookie Read</h2>
+				<table>
+					<tr>
+						<td>userName Cookie Value</td><td id='cookieuserName'></td>
+					</tr>
+					<tr>
+						<td>userEmail CookieValue</td><td id='cookieEmail'></td>
+					</tr>
+				</table>
+
+			</div>
+			<div class='clear'></div>
+
+
+
+			<div class='grd12'>
+				<article>
+					<p>The first browser to use cookie functionality was Netscape.  In Computer Science parlance, a cookie is an opaque piece of data held by an intermediary.  In other words it is a small data file on your hard disk (intermediary) that is used by web domains to store some data on your machine</p>
+					<p>The typical usage of cookies is for holding user information to personalise a website for the user.  This can be information such as name, color preferences, etc.</p>
+					<p>It is generally a bad idea to store any personal information (including name) in a cookie.  Cookies do present a risk to users if developers do not adhere to strict data protection controls.</p>
+					<p>The latest form of attack (2013) is 'JavaScript Cookie Bomb'.  It works like this:</p>
+					<ul>
+						<li>Compromised Site, or mal-intentioned site puts/creates Cookie on your machine</li>
+						<li>Cookie contains <span class='code'>iframe</span> code that renders into the webpage.  The <span class='code'>iframe</span> content is whatever hacker wants it to be, typically an advert of some kind.  It could also be an exploit kit or other malware.</li>
+					</ul>
+					<p>A good resource for Cookie information is: 
+					<a href="http://www.cookiecentral.com/">cookiecentral.com</a></p>
+					<p>Some believe that the cookie has had its day, and will be replaced by local storage systems.</p>
+				</article>
+			</div>
+			<div class='clear'></div>
+
+
+
+
+
+		</div> <!-- End of Container -->
+		<script type="text/javascript" src="js/JSCookie.js"></script>
+	</body>
+</html>

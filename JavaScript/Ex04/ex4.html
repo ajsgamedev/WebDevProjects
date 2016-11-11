@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>JavaScript Cookies</title>
+
+    <!-- Bootstrap -->
+    <link href="../bs/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+   <div class="container">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-default">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">JavaScript Cookies</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#e1">Empty</a></li>
+            <li><a href="#e2">Empty</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container" role="main">
+
+	    <div class='col-md-12'>
+		<article>
+			<h2>JavaScript Cookies</h2>
+			<p>The first browser to use cookie functionality was Netscape.  In Computer Science parlance, a cookie is an opaque piece of data ld by an intermediary.  In other words it is a small data file on your hard disk (intermediary) that is used by web domains to ore some data on your machine</p>
+			<p>The typical usage of cookies is for holding user information to personalise a website for the user.  This can be information ch as name, color preferences, etc.</p>
+			<p>It is generally a bad idea to store any personal information (including name) in a cookie.  Cookies do present a risk to users  developers do not adhere to strict data protection controls.</p>
+			<p>The latest form of attack (2013) is 'JavaScript Cookie Bomb'.  It works like this:</p>
+			<ul>
+				<li>Compromised Site, or mal-intentioned site puts/creates Cookie on your machine</li>
+				<li>Cookie contains <code>&lt;iframe&gt;</code> code that renders into the webpage.  The <code>&lt;iframe&gt;</code> content  whatever hacker wants it to be, typically an advert of some kind.  It could also be an exploit kit or other malware.</li>
+			</ul>
+			<p>A good resource for Cookie information is: 
+			<a href="http://www.cookiecentral.com/">cookiecentral.com</a>.  Further information on this exploit is also availible at <a href="tp://malwaremustdie.blogspot.ie/2013/07/proof-of-concept-of-cookiebomb-attack.html">http://malwaremustdie.blogspot.ie/2013/07/oof-of-concept-of-cookiebomb-attack.html</a></p>
+			<p>
+			A full, and robust cookie framework is availible from the Mozilla Developer Network at <a href="https://developer.mozilla.org/en-US/cs/Web/API/document.cookie">https://developer.mozilla.org/en-US/docs/Web/API/document.cookie</a>
+			</p>
+
+		</article>
+	    </div>
+
+
+		<div class='col-md-offset-2 col-md-6'>
+			<h2>Form Input</h2>
+			<form id='cookieForm'>
+  				<div class='formgroup'>
+  					<label for='name' >Name:</label>
+  					<input type='text' name='name' class='form-control' id='name' placeholder='Firstname Surname'><br>
+  				</div>
+  				<div class='formgroup'>
+  					<label for='email'>Email Address:</label> 
+  					<input type='email' name='userEmail' class='form-control' id='userEmail'placeholder='name@email.com'><br>
+    			</div>
+
+    			<button type='button' class='btn btn-primary' form='cookieForm' id='subButton'>Submit Information</button>		
+			</form>
+		</div>
+		<div class='clearfix'></div>
+		<div class='col-md-6' id='Form Submission'>
+			<h2>Form Output</h2>
+			<table class='table table-hover table-bordered'>
+				<tr>
+					<td>Name Field Contains</td><td id='outName'></td>
+				</tr>
+				<tr>
+					<td>Email Field Contains</td><td id='outEmail'></td>
+				</tr>
+			</table>
+		</div>
+		<div class='col-md-6' id='cookieRead'>
+			<h2>Cookie Read</h2>
+			<table class='table table-hover table-bordered'>
+				<tr>
+					<td>userName Cookie Value</td><td id='cookieuserName'></td>
+				</tr>
+				<tr>
+					<td>userEmail CookieValue</td><td id='cookieEmail'></td>
+					</tr>
+			</table>
+			<button type='button' class='btn btn-primary' id='pullCookie'>Pull Cookie Data</button>
+		</div>
+		<div class='clearfix'></div>
+
+
+    
+
+	    <div class='col-sm-12 col-md-12'>
+	      <h2>JavaScript Code</h2>
+	      <pre><code class='js'>
+window.onload = init;
+
+function init () {
+	console.log('Running Init')
+
+	addEvent(document.getElementById('subButton'), 'click', processForm);
+
+	var userName ="";
+
+	if (document.cookie != ""){
+		userName = document.cookie.split("=")[1];
+	}
+
+	console.log(userName);
+	document.getElementById('cookieuserName').innerHTML = userName;
+	document.getElementById('cookieEmail').value = userName;
+
+}
+
+function processForm(){
+
+	console.log('Processing Form');
+	document.getElementById('outName').innerHTML =  document.getElementById('name').value
+	document.getElementById('outEmail').innerHTML =  document.getElementById('userEmail').value
+
+	var expireDate = new Date();
+
+	expireDate.setMonth(expireDate.getMonth()+12);
+
+
+	setCookie('test','testvalue', '/', expireDate.toGMTString());
+
+	setCookie('overload','overloadTest');
+
+	setCookie('overload','overloadTest2', '/');
+
+	hello;
+
+
+}
+
+function setCookie (name, value, path, expireDate) {
+	console.log('setting cookie')
+	document.cookie = name +'=' + value + ';path=' + path + ';expires=' + expireDate;
+
+}
+
+
+function getCookie(name){
+
+	console.log('getting cookie')
+
+		var c_value = document.cookie;
+		var c_start = c_value.indexOf(" " + c_name + "=");
+		if (c_start == -1)
+		  {
+		  c_start = c_value.indexOf(c_name + "=");
+		  }
+		if (c_start == -1)
+		  {
+		  c_value = null;
+		  }
+		else
+		  {
+		  c_start = c_value.indexOf("=", c_start) + 1;
+		  var c_end = c_value.indexOf(";", c_start);
+		  if (c_end == -1)
+		  {
+		c_end = c_value.length;
+		}
+		c_value = unescape(c_value.substring(c_start,c_end));
+		}
+		return c_value;
+
+}
+
+ // Some code from a previous example to attach the event handler to the button 
+
+function addEvent (obj, listener, handler) {
+	if (obj){
+		if (obj.addEventListener){
+			obj.addEventListener(listener, handler, false);
+			console.log("Added Event Listener to " + obj );
+		}
+		else if (obj.attachEvent){
+			obj.attachEvent("on" + listener, handler);
+			console.log("Attached Event - Old IE");
+		}
+	}
+	else {
+		console.log("Element " + obj + " not found");	
+	}
+}
+	      </code></pre>
+	    </div>
+
+
+
+
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bs/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bs/highlight/styles/default.css">    
+    <script src="../bs/highlight/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/JSCookie.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html

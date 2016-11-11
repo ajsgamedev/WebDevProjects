@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>JavaScript Cookies</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css"/>
+
+	</head>
+	
+	<body>
+
+		<div id='container'>
+			<div class='grd12'><h1>JavaScript Cookies</h1></div>
+			<div class='clear'></div>			
+
+		
+			<nav>
+				<ul>
+					<li class='rmenu'><a href="#">Menu</a></li>
+					<li><a href="JSCookie.html">Home</a></li>
+					<li><a href="#">Nothing Here</a></li>
+					<li><a href="#">Nothing Here</a></li>
+				</ul>
+			</nav>
+			<div class='clear'></div>
+			<div class='grd12'>
+				<article>
+					<p>The first browser to use cookie functionality was Netscape.  In Computer Science parlance, a cookie is an opaque piece of data held by an intermediary.  In other words it is a small data file on your hard disk (intermediary) that is used by web domains to store some data on your machine</p>
+					<p>The typical usage of cookies is for holding user information to personalise a website for the user.  This can be information such as name, color preferences, etc.</p>
+					<p>It is generally a bad idea to store any personal information (including name) in a cookie.  Cookies do present a risk to users if developers do not adhere to strict data protection controls.</p>
+					<p>The latest form of attack (2013) is 'JavaScript Cookie Bomb'.  It works like this:</p>
+					<ul>
+						<li>Compromised Site, or mal-intentioned site puts/creates Cookie on your machine</li>
+						<li>Cookie contains <span class='code'>iframe</span> code that renders into the webpage.  The <span class='code'>iframe</span> content is whatever hacker wants it to be, typically an advert of some kind.  It could also be an exploit kit or other malware.</li>
+					</ul>
+					<p>A good resource for Cookie information is: 
+					<a href="http://www.cookiecentral.com/">cookiecentral.com</a>.  Further information on this exploit is also availible at <a href="http://malwaremustdie.blogspot.ie/2013/07/proof-of-concept-of-cookiebomb-attack.html">http://malwaremustdie.blogspot.ie/2013/07/proof-of-concept-of-cookiebomb-attack.html</a></p>
+				</article>
+			</div>
+			<div class='clear'></div>
+
+			<div class='grd12'>
+				<form name='cookieForm'>
+  					<label for='name'>Name:</label>
+  						<input type='text' name='name' id='name' placeholder='Enter Your Name' required>
+						<div class='clear'></div>
+  					<label for='email'>Email Address:</label> 
+  						<input type='email' name='email' placeholder='name@email.com'>
+						<div class='clear'></div>
+    				<button id='subButton' type='submit' form='cookieForm'>Submit Information</button>		
+  				</form>
+			</div>
+			<div class='clear'></div>
+
+			<div class="bl3 grd6 br3" id='cookieVals'>
+			<h3>Returning Data</h3>
+
+
+			<h3>Data from Previous Form Cookies</h3>
+
+			<h3>Data from Cookie values entered in form</h3>
+
+			</div>
+			<div class="clear"></div>
+
+
+			<div class="grd12">
+				<p>
+				A full, and robust cookie framework is availible from the Mozilla Developer Network at <a href="https://developer.mozilla.org/en-US/docs/Web/API/document.cookie">https://developer.mozilla.org/en-US/docs/Web/API/document.cookie</a>
+				</p>
+			</div>
+			<div class="clear"></div>
+
+		</div> <!-- End of Container -->
+		<script type="text/javascript" src="js/JSCookie.js"></script>
+	</body>
+</html>
