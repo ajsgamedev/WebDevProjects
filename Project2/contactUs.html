@@ -43,9 +43,43 @@
 
 
     <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h2>Contact Us</h2>
+        <P></P>
+      </div>
+
+      <div class="col-md-7">
+        <h2>Where to Find Us</h2>
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9528.075794324335!2d-6.300048!3d53.342917!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3dc9b365e0e6ace!2sIrish+Museum+of+Modern+Art!5e0!3m2!1sen!2sie!4v1480429061718" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+      </div>
     </div>
 
 
+
+
+<div class="row">
+      <div class="col-md-6">
+      <form id='localStorageForm' autocomplete='on'>
+      <div class="row">
+    	<div class="col-md-4">
+			<label for='key'>Name:</label>
+			<input type="text" name='key' id='frmkey' class='form-control' placeholder="Your Name">
+			<label for='value'>Email Address:</label>
+			<input type="text" name='value' id='frmval' class='form-control' placeholder="Your Email Address">
+			<label for='subject'>Subject:</label>
+      <input type="text" name='subject' id='frmsubject' class='form-control' placeholder="Subject">
+		</div>
+		<div class="col-md-4">
+			<label for='message'>Message</label>
+			<textarea name="message" id="frmmessage" class='form-control' rows="10" placeholder="Your Message Here"></textarea>
+		</div>
+	</div><br>
+  <button type="button" form='localStorageForm' class="btn btn-primary" id='formButton'>Send</button>
+</form>
+</div>
+</div>
+</div>
     <footer>
       <div class="container">
       <p class="pull-right"><a href="#">Back to top</a></p>
@@ -57,5 +91,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src='js/localstorage.js'></script>
   </body>
 </html>
