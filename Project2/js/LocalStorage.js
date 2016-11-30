@@ -12,73 +12,48 @@ $('#localStorageForm').click(formInfo);
 
 function formInfo () {
 
-	inValue = $('#frmkey').val();
-	//inValue = $('#frmval').val();
+	inValue = $('#frmname').val();
+	inEmail = $('#frmemail').val();
 	inSubject = $('#frmsubject').val();
 	inMessage = $('#frmmessage').val();
 
 	//console.log(inKey, inValue);
 
 	if (localStorage.getItem(inValue) === null){
+			localStorage.setItem('Name', inValue);
 
-		//localStorage.setItem(inKey, inValue);
-
-		localStorage.setItem('Name', inValue);		
-		
 		$('#message').html('Data Entered');
-		//$('#ekey').html(inKey);
-		$('#evalue').html(localStorage.getItem(inKey));
+
+	} else{
+		$('#message').html('Key Error: no data entered');
+	}
+
+	if (localStorage.getItem(inEmail) === null){
+			localStorage.setItem('Email', inEmail);
+
+		$('#message').html('Data Entered');
+
+	} else{
+		$('#message').html('Key Error: no data entered');
+	}
+
+	if (localStorage.getItem(inSubject) === null){
+			localStorage.setItem('Subject', inSubject);
+
+		$('#message').html('Data Entered');
 
 	} else{
 		$('#message').html('Key Error: no data entered');
 	}
 
 
-}
+	if (localStorage.getItem(inMessage) === null){
+			localStorage.setItem('Message', inMessage);
 
-function simpleSetRetrieve () {
+		$('#message').html('Data Entered');
 
-	localStorage.setItem('simpleName','This is some simple data');
+	} else{
+		$('#message').html('Key Error: no data entered');
+	}
 
-	$('#lsData').attr('placeholder', localStorage.getItem('simpleName'));
-
-}
-
-
-
-var exObject = {
-
-	getName: function (){
-		return this.name;
-	},
-
-	setName: function (val){
-		this.name = val;
-	},
-
-	getNumber: function (){
-		return this.number;
-	},
-
-	setNumber: function (val){
-
-		this.number = val;
-	},
-}
-
-function showRetObj (obj) {
-
-	console.log(obj);
-
-	$('#objName').attr('placeholder', obj.name);
-	$('#objNumber').attr('placeholder', obj.number);
-
-}
-
-
-// The function below is to reflect the contents of the javascript file back to the HTML Page
-function reflectCode(){
-	$.get('js/localStorage.js', function(data) {
-	   $('#codeExample').text(data);
-	}, 'text');
 }

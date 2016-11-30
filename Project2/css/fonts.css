@@ -10,11 +10,10 @@ font-family: 'Fjalla One', sans-serif;
 
 
 h1, h2{
-	text-align: center;
 	font-family: "Instruction", cursive;
 }
 
-h3, h5, a{
+h3, h4, h5, a{
 	font-family: "Instruction", cursive;
 }
 

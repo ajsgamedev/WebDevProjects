@@ -45,31 +45,31 @@
 
             <div class="container">
               <div class="jumbotron">
-                <h1>Current Event</h1>
+                <h1>Latest News</h1>
                   <p>*Description of latest news*</p>
-                  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                  <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newsModal">Read More</button></p>
               </div>
             </div>
 
       <div class="container marketing">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+          <img class="img-circle" src="images/food-school.jpg" alt="ah Whelan, Sophianne Lubasa and Béibhinn O’Hair, at the Food Power School as part of A Fair Land." width="140" height="140">
+          <h2>The Food Power School as part of A Fair Land</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newsModal">Read More</button></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 col-md-6 col-sm-6">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+          <img class="img-circle" src="images/suitcase-chris-jones.jpg" alt="Gordon Lambert’s suitcase, Photo by Chris Jones" width="140" height="140">
+          <h2>The Gordon Lambert Archive Project</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newsModal">Read More</button></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 col-md-6 col-sm-6">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+          <img class="img-circle" src="images/carol_rama.jpg" alt="Pictured here on the far right is Carol Rama, L’isola degli occhi (The Island of Eyes), 1967, Plastic eyes, synthetic resin and enamel on canvas, 120 x 160 cm, Private Collection, Installation view at IMMA, photo Denis Mortell" width="140" height="140">
+          <h2>Carol Rama’s ‘L’Isola degli occhi’</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newsModal">Read More</button></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -80,9 +80,9 @@
             <div class="row">
           	<div class="col-md-6 col-sm-6">
       			<label for='key'>Name:</label>
-      			<input type="text" name='key' id='frmkey' class='form-control' placeholder="Your Name">
+      			<input type="text" name='jcName' id='frmkey' class='form-control' placeholder="Your Name">
       			<label for='value'>Email Address:</label>
-      			<input type="text" name='value' id='frmval' class='form-control' placeholder="Your Email Address">
+      			<input type="Email" name='jcEmail' id='frmval' class='form-control' placeholder="Your Email Address">
       		</div>
       	</div><br>
         </div>
@@ -90,6 +90,25 @@
         <button type="button" form='localStorageForm' class="btn btn-primary" id='formButton'>Send</button>
       </form>
 
+
+      <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
       <footer>
         <div class="container">
@@ -101,5 +120,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src='js/lightbox.js'></script>
   </body>
 </html>
