@@ -12,19 +12,21 @@ $('#localStorageForm').click(formInfo);
 
 function formInfo () {
 
-	inKey = $('#frmkey').val();
-	inValue = $('#frmval').val();
+	inValue = $('#frmkey').val();
+	//inValue = $('#frmval').val();
 	inSubject = $('#frmsubject').val();
 	inMessage = $('#frmmessage').val();
 
-	console.log(inKey, inValue);
+	//console.log(inKey, inValue);
 
-	if (localStorage.getItem(inKey) === null){
+	if (localStorage.getItem(inValue) === null){
 
-		localStorage.setItem(inKey, inValue);
+		//localStorage.setItem(inKey, inValue);
 
+		localStorage.setItem('Name', inValue);		
+		
 		$('#message').html('Data Entered');
-		$('#ekey').html(inKey);
+		//$('#ekey').html(inKey);
 		$('#evalue').html(localStorage.getItem(inKey));
 
 	} else{
