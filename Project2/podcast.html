@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>IMMA (Irish Museum of Modern Art) Homepage</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/navBarColours.css">
@@ -35,6 +35,7 @@
                         <li><a href="aboutUs.html">About</a></li>
                         <li><a href="contactUs.html">Contact</a></li>
                         <li class="active"><a href="#">Podcasts</a></li>
+                        <li><a href="styleGuide.html">Style Guide</a></li>
                       </ul>
                     </div>
                   </div>
@@ -55,7 +56,7 @@
       <div class="container marketing">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6">
-          <iframe width="100%" class="embed-responsive-item" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191775573&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          <iframe class="embed-responsive-item"  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191775573&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
           <h2>Roundtable Discussion | Collecting for the public</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
 
@@ -78,17 +79,18 @@
               <h2>Subcribe to Our Newsletter!</h2>
             <form id='cookieForm' autocomplete='on'>
             <div class="row">
-          	<div class="col-md-6 col-sm-6">
-      			<label for='key'>Name:</label>
-      			<input type="text" name='jcName' id='name' class='form-control' placeholder="Your Name">
-      			<label for='value'>Email Address:</label>
-      			<input type='email' name='jcEmail' class='form-control' id='jcEmail'	placeholder='name@email.com'>
-      		</div>
+              <div class="col-md-6 col-sm-6">
+        			<label for='key'>Name:</label>
+        			<input type="text" name='name' id='jcName' class='form-control' placeholder="Your Name">
+        			<label for='value'>Email Address:</label>
+        			<input type="email" name='email' class='form-control' id='jcEmail'	placeholder='name@email.com'>
+        		</div>
       	</div><br>
         </div>
         </div>
         <button type="button" form='cookieForm' class="btn btn-primary" id='subButton'>Send</button>
       </form>
+    </div><br><!--end of container-->
 
       <footer>
         <div class="container">
@@ -105,6 +107,6 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src='js/lightbox.js'></script>
-    </script>
+    <script src='js/JSCookie.js'></script>
   </body>
 </html>

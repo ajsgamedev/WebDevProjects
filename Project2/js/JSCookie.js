@@ -6,8 +6,6 @@ function init () {
 	console.log('Running Init')
 
 	addEvent(document.getElementById('subButton'), 'click', processForm);
-	addEvent(document.getElementById('pullCookie'), 'click', pullCookieData);
-
 
 	var userName ="";
 
@@ -16,34 +14,24 @@ function init () {
 	}
 
 	console.log(userName);
-	document.getElementById('name').innerHTML = userName;
-	document.getElementById('jcEmail').value = userName;
+	document.getElementById('jcName').innerHTML = userName;
+	document.getElementById('jcEmail').innerHTML = userName;
 
 }
 
 function processForm(){
 
-	console.log('Processing Form');
-	document.getElementById('outName').innerHTML =  document.getElementById('name').value
-	document.getElementById('outEmail').innerHTML =  document.getElementById('jcEmail').value
+	//document.getElementById('outName').innerHTML =  document.getElementById('jcName').value
+	//document.getElementById('outEmail').innerHTML =  document.getElementById('jcEmail').value
 
 	var expireDate = new Date();
 
 	expireDate.setMonth(expireDate.getMonth()+12);
 
-	setCookie('name',document.getElementById('name').value, '/', expireDate.toGMTString());
+	setCookie('name',document.getElementById('jcName').value, '/', expireDate.toGMTString());
 	setCookie('email',document.getElementById('jcEmail').value, '/', expireDate.toGMTString());
 
 }
-
-function pullCookieData(){
-
-	console.log('Pulling Cookie Data');
-	document.getElementById('cookieuserName').innerHTML =  getCookie('name');
-	document.getElementById('cookieEmail').innerHTML =  getCookie('email');
-
-}
-
 
 function setCookie (name, value, path, expireDate) {
 	// Default constructor for creating a cookie.  Cookies can be simple key-value pairs, or we can add

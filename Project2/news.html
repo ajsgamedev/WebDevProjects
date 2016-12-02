@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>IMMA (Irish Museum of Modern Art) News</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,6 +35,7 @@
                         <li><a href="aboutUs.html">About</a></li>
                         <li><a href="contactUs.html">Contact</a></li>
                         <li><a href="podcast.html">Podcasts</a></li>
+                        <li><a href="styleGuide.html">Style Guide</a></li>
                       </ul>
                     </div>
                   </div>
@@ -78,21 +79,21 @@
 
       <div class="row">
             <div class="col-md-6 col-sm-6">
-              <h2>Subcribe to Our Newsletter!</h2>
+            <h2>Subcribe to Our Newsletter!</h2>
             <form id='cookieForm' autocomplete='on'>
             <div class="row">
           	<div class="col-md-6 col-sm-6">
       			<label for='key'>Name:</label>
-      			<input type="text" name='jcName' id='name' class='form-control' placeholder="Your Name">
+      			<input type="text" name='name' id='jcName' class='form-control' placeholder="Your Name" required pattern="[a-zA-Z]+">
       			<label for='value'>Email Address:</label>
-      			<input type='email' name='jcEmail' class='form-control' id='jcEmail'	placeholder='name@email.com'>
+      			<input type="email" name='email' class='form-control' id='jcEmail'	placeholder='name@email.com' required>
       		</div>
-      	</div><br>
+      	</div>
         </div>
-        </div>
-        <button type="button" form='cookieForm' class="btn btn-primary" id='subButton'>Send</button>
+      </div><br>
+        <button type="submit" form='cookieForm' class="btn btn-primary" id='subButton'>Send</button>
       </form>
-
+      </div>
 
       <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -113,7 +114,7 @@
     </div>
   </div>
 
-      <footer>
+      <br><footer>
         <div class="container">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Alan Stewart &middot; <a href="contactUs.html">Contact Us</a></p>
@@ -129,7 +130,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src='js/lightbox.js'></script>
     <script src='js/JSCookie.js'></script>
-
-    </script>
   </body>
 </html>
